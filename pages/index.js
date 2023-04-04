@@ -61,7 +61,7 @@ const Signup = () => {
           onChange={changeHandler}
           value={fields.password}
         />
-        <p className="text-rose-500 font-semibold">Error</p>
+        <p className="text-rose-500 font-semibold">Eror</p>
 
         <label htmlFor="confirmPassword" className="mt-4 font-semibold">
           Confirm password{" "}
