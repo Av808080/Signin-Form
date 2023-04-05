@@ -9,16 +9,16 @@ const Signup = () => {
     checkbox: false,
   });
   const changeHandler = (event) => {
-    event.target.id === 'checkbox'? setFields({
-      ...fields ,
-      checkbox:event.target.checked
-    }) :
-    setFields({
-      ...fields,
-      [event.target.id]: event.target.value,
-    });
+    event.target.id === "checkbox"
+      ? setFields({
+          ...fields,
+          checkbox: event.target.checked,
+        })
+      : setFields({
+          ...fields,
+          [event.target.id]: event.target.value,
+        });
   };
-  console.log(fields);
   return (
     <div className="h-screen bg-slate-200 flex justify-center items-center">
       <div className="container bg-slate-50 rounded-2xl flex flex-col px-14 py-10 mx-32 lg:mx-96 ">
