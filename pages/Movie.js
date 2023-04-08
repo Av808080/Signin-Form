@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
+import NavMenu from "@/components/NavMenu";
 const Movie = () => {
   const [data, setdata] = useState({});
   const input = useRef();
@@ -14,6 +15,7 @@ const Movie = () => {
   //   return<div>NO MOVIE WITH THIS NAME</div>
   return (
     <div>
+        <NavMenu/>
       <input type="text" ref={input} className="border-slate-700 border" />
       <button className="outline" onClick={clickHandler}>
         CLICK
