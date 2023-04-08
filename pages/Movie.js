@@ -9,9 +9,7 @@ const Movie = () => {
       .get(`${URL}${input.current.value}`)
       .then((response) => setdata(response.data));
   };
-//   console.log(data);
-  //   if(data)
-  //   return<div>NO MOVIE WITH THIS NAME</div>
+  
   return (
     <div>
       <input type="text" ref={input} className="border-slate-700 border" />
